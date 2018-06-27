@@ -17,6 +17,7 @@
         <img id='grate' src='grate.png'/>  
         <img id='trovia' src='planet_trovia.jpg'/>  
     </a-assets>
+    <a-gltf-model src="destroyer.glb" position="-79.58 0 -305.673" rotation="0 -90.01166961505233 0" scale="1482.685 1482.685 1482.685" gltf-model="destroyer.glb"></a-gltf-model>
     <a-entity id="theplanet" position="0 -432.911 0">
         <a-sphere position="1 1 1931.723" material="src:#trovia" id="moon1" scale="400.736 400.736 400.736" rotation="40.451 -158.194 121.639">
          
@@ -30,12 +31,13 @@
 
        </a-entity>
 
-       <a-entity id="main_structure" position="0 0 -23.675">
-        <a-entity id="landing">
-            <a-entity id="landing_part" geometry="primitive:torus;arc:180;radiusTubular:0.001" material="color:lightgrey;src:btn1.png" position="0 1.153 0" rotation="90.01166961505233 180.02333923010465 180.02333923010465" scale="25.884 25.884 25.884"></a-entity>
-            <a-entity id="landing_grate" geometry="primitive:cylinder;thetaLength:180" material="repeat:25 25;transparent:true;src:grate.png" position="0 -1.362 0" rotation="0 -87.204 0" scale="25.884 0.136 25.884"></a-entity>
+   <a-entity id="main_structure" position="0 0 -23.675">
+        <a-entity id="landing" position="0 1.986 0">
+            <a-entity id="landing_part" geometry="primitive:torus;arc:180;radiusTubular:0.001" material="color:lightgrey;src:btn1.png" position="0 1.153 0" rotation="90.01166961505233 180.02333923010465 180.02333923010465" scale="25.884 25.884 25.884"></a-entity><a-entity id="landing_part-2" geometry="primitive:torus;arc:180;radiusTubular:0.001" material="color:lightgrey;src:btn1.png" position="0 -1.24 0" rotation="90.01166961505233 180.02333923010465 180.02333923010465" scale="25.884 25.884 25.884"></a-entity>
+            <a-entity id="landing_grate" geometry="primitive:cylinder;thetaLength:180" material="repeat:25 25;transparent:true;src:grate.png" position="0 -1.272 0" rotation="0 -90 0" scale="25.884 0.136 25.884"></a-entity>
             <a-entity id="landing_part_flat" geometry="" material="repeat:25 1;src:small_hull1.jpg" position="0 -1.545 -1.284" scale="84.799 0.435 2.808"></a-entity>
            </a-entity>
+           <a-entity id="wall">
          <a-entity id="ship">
           <a-entity geometry="" material="repeat:5 5;src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
           <a-entity geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
@@ -57,6 +59,53 @@
               <a-entity geometry="" material="repeat:5 5;src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
               <a-entity geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
               
+                </a-entity>
+                </a-entity><a-entity id="wall-2" position="0 22.71 0">
+         <a-entity id="ship">
+          <a-entity geometry="" material="repeat:5 5;src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+          <a-entity geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+          
+            </a-entity><a-entity id="ship-4" position="-45.53 0 0">
+          <a-entity geometry="" material="repeat:5 5;src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+          <a-entity geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+          
+            </a-entity><a-entity id="ship-5" position="45.338 0 0">
+          <a-entity geometry="" material="repeat:5 5;src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+          <a-entity geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+          
+            </a-entity> 
+            <a-entity id="ship-2" position="22.697 0 0.276">
+              <a-entity geometry="" material="repeat:5 5;src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+              <a-entity geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              
+                </a-entity><a-entity id="ship-3" position="-22.718 0 0.276">
+              <a-entity geometry="" material="repeat:5 5;src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+              <a-entity geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              
+                </a-entity>
+                </a-entity><a-entity id="wall-3" position="0 -17.548 -17.025" rotation="43.88856710702106 0 0">
+         <a-entity id="ship">
+          <a-entity geometry="" material="repeat:5 5;src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+          <a-entity geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+          
+            </a-entity><a-entity id="ship-4" position="-45.53 0 0">
+          <a-entity geometry="" material="repeat:5 5;src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+          <a-entity geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+          
+            </a-entity><a-entity id="ship-5" position="45.338 0 0">
+          <a-entity geometry="" material="repeat:5 5;src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+          <a-entity geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+          
+            </a-entity> 
+            <a-entity id="ship-2" position="22.697 0 0.276">
+              <a-entity geometry="" material="repeat:5 5;src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+              <a-entity geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              
+                </a-entity><a-entity id="ship-3" position="-22.718 0 0.276">
+              <a-entity geometry="" material="repeat:5 5;src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+              <a-entity geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              
+                </a-entity>
                 </a-entity>
           </a-entity>
     <!-- add the backdrop of stars -->
