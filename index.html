@@ -13,7 +13,7 @@
         <img id='moon' src='moon.jpg'/>
         <img id='stars' src='stars.png'/>
         <img id='btn' src='btn1.png'/>
-        <img id='hull' src='hull.jpg'/>      
+        <img id='hull' src='hull1.jpg'/>      
         <img id='grate' src='grate.png'/>  
         <img id='trovia' src='planet_trovia.jpg'/>  
     </a-assets>
@@ -27,8 +27,12 @@
         <a-animation attribute="position"  to="1.0 1.0 178.790" dur="200000"></a-animation>
     
     </a-sphere>
-  
+
        </a-entity>
+       <a-entity id="ship">
+        <a-entity geometry="" material="src:hull1.jpg" position="0 11.568 -13.652" scale="22.484 22.484 1.043"></a-entity>
+        
+          </a-entity>   
     <!-- add the backdrop of stars -->
     <a-sky src='#stars' radius='2500' id="the_sky" position="" rotation="" scale="">
 
