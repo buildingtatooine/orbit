@@ -17,6 +17,11 @@
         <img id='grate' src='grate.png'/>  
         <img id='trovia' src='planet_trovia.jpg'/>  
     </a-assets>
+    <a-entity id="boundary">
+            <a-entity n-box-collider="type:environment" geometry="" material="color:red;opacity:0" position="62.747 11.568 -1.284" scale="14.623 60.73 165.176"></a-entity>
+            <a-entity n-box-collider="type:environment" geometry="" material="opacity:0;color:red" position="-63.045 11.568 -1.284" scale="14.623 60.73 165.176"></a-entity>
+            <a-entity n-box-collider="type:environment" geometry="" material="opacity:0;color:red" position="-13.806 11.568 38.273" scale="14.623 60.73 165.176" rotation="0 -90 0"></a-entity>
+    </a-entity>
     <!--
 
   
@@ -37,14 +42,14 @@
         <a-animation attribute="position" from="-1905.170 4 1975.462" to="-8736.767 4 1975.462" dur="1000" delay="600000"></a-animation>
 </a-entity>
 <a-entity id="catwalk" position="0 30.164 0">
-        <a-entity n-mesh-collider="type: environment" obj-model="mtl:catwalk.mtl;obj:catwalk.obj" position="-45.505 19.346 50.562" rotation="-77.97955591730503 179.8514518915654 0.17188733853924698" scale="114.339 114.339 114.339"></a-entity>
-        <a-entity n-mesh-collider="type: environment" obj-model="mtl:catwalk.mtl;obj:catwalk.obj" position="45.153 19.346 50.562" rotation="-77.97955591730503 179.8514518915654 0.17188733853924698" scale="114.339 114.339 114.339"></a-entity>
+        <a-entity n-box-collider="type: environment" obj-model="mtl:catwalk.mtl;obj:catwalk.obj" position="-45.505 19.346 50.562" rotation="-77.97955591730503 179.8514518915654 0.17188733853924698" scale="114.339 114.339 114.339"></a-entity>
+        <a-entity n-box-collider="type: environment" obj-model="mtl:catwalk.mtl;obj:catwalk.obj" position="45.153 19.346 50.562" rotation="-77.97955591730503 179.8514518915654 0.17188733853924698" scale="114.339 114.339 114.339"></a-entity>
 <a-entity id="upper_struct">
-        <a-entity n-mesh-collider="type: environment" geometry="primitive:ring;radiusInner:0.84;radiusOuter:1" material="side:double;src:small_hull1.jpg" position="-44.611 4.996 65.058" rotation="-90.01166961505233 0 0" scale="29.437 29.437 29.437" id="upper_floor"></a-entity>
-        <a-entity n-mesh-collider="type: environment" geometry="primitive:torus;arc:300;radiusTubular:0.020000000000000018" material="side:double;src:small_hull1.jpg" position="-44.611 4.996 65.058" rotation="-90.01166961505233 120.49302431601214 0" scale="29.437 29.437 29.437" id="upper_ring"></a-entity>
+        <a-entity n-box-collider="type: environment" geometry="primitive:ring;radiusInner:0.84;radiusOuter:1" material="side:double;src:small_hull1.jpg" position="-44.611 4.996 65.058" rotation="-90.01166961505233 0 0" scale="29.437 29.437 29.437" id="upper_floor"></a-entity>
+        <a-entity n-box-collider="type: environment" geometry="primitive:torus;arc:300;radiusTubular:0.020000000000000018" material="side:double;src:small_hull1.jpg" position="-44.611 4.996 65.058" rotation="-90.01166961505233 120.49302431601214 0" scale="29.437 29.437 29.437" id="upper_ring"></a-entity>
 </a-entity><a-entity id="upper_struct-2" position="91.974 0 0">
-        <a-entity n-mesh-collider="type: environment" geometry="primitive:ring;radiusInner:0.84;radiusOuter:1" material="side:double;src:small_hull1.jpg" position="-44.611 4.996 65.058" rotation="-90.01166961505233 0 0" scale="29.437 29.437 29.437" id="upper_floor"></a-entity>
-        <a-entity n-mesh-collider="type: environment" geometry="primitive:torus;arc:300;radiusTubular:0.020000000000000018" material="side:double;src:small_hull1.jpg" position="-44.611 4.996 65.058" rotation="-90.01166961505233 120.49302431601214 0" scale="29.437 29.437 29.437" id="upper_ring"></a-entity>
+        <a-entity n-box-collider="type: environment" geometry="primitive:ring;radiusInner:0.84;radiusOuter:1" material="side:double;src:small_hull1.jpg" position="-44.611 4.996 65.058" rotation="-90.01166961505233 0 0" scale="29.437 29.437 29.437" id="upper_floor"></a-entity>
+        <a-entity n-box-collider="type: environment" geometry="primitive:torus;arc:300;radiusTubular:0.020000000000000018" material="side:double;src:small_hull1.jpg" position="-44.611 4.996 65.058" rotation="-90.01166961505233 120.49302431601214 0" scale="29.437 29.437 29.437" id="upper_ring"></a-entity>
 </a-entity>      
         <a-entity geometry="primitive:ring;radiusInner:0.5;radiusOuter:1" material="side:double;src:small_hull1.jpg"></a-entity>
     </a-entity>
@@ -74,77 +79,77 @@
        </a-entity>
        <a-entity id="main_structure" position="0 2.407 30.8" rotation="-90.01166961505233 180.02333923010465 180.02333923010465">
             <a-entity id="landing" position="0 1.986 0">
-                    <a-entity n-mesh-collider="type: environment" id="landing_part" geometry="primitive:torus;arc:180;radiusTubular:0.001" material="color:lightgrey;src:btn1.png" position="0 1.153 0" rotation="90.01166961505233 180.02333923010465 180.02333923010465" scale="25.884 25.884 25.884"></a-entity><a-entity id="landing_part-2" geometry="primitive:torus;arc:180;radiusTubular:0.001" material="color:lightgrey;src:btn1.png" position="0 -1.754 0" rotation="90.01166961505233 180.02333923010465 180.02333923010465" scale="25.884 25.884 25.884"></a-entity>
+                    <a-entity n-box-collider="type: environment" id="landing_part" geometry="primitive:torus;arc:180;radiusTubular:0.001" material="color:lightgrey;src:btn1.png" position="0 1.153 0" rotation="90.01166961505233 180.02333923010465 180.02333923010465" scale="25.884 25.884 25.884"></a-entity><a-entity id="landing_part-2" geometry="primitive:torus;arc:180;radiusTubular:0.001" material="color:lightgrey;src:btn1.png" position="0 -1.754 0" rotation="90.01166961505233 180.02333923010465 180.02333923010465" scale="25.884 25.884 25.884"></a-entity>
                     <a-entity n-sound="src:space.wav;loop:true;volume:5;autoplay:true;pitch:0.01;minDistance:20;" id="landing_grate" geometry="" material="repeat:25 1;transparent:true;src:grate.png" position="0 -1.958 24.66" rotation="0 -90 0" scale="49.997 0.136 3.511"></a-entity>
                     
                    </a-entity>
                <a-entity id="wall">
              <a-entity id="ship">
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
               
                 </a-entity><a-entity id="ship-4" position="-45.53 0 0">
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.569 -6.525" scale="22.484 22.484 8.209"></a-entity>
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.569 -6.525" scale="22.484 22.484 8.209"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
               
                 </a-entity><a-entity id="ship-5" position="45.338 0 0">
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.57 -5.001" scale="22.484 22.484 5.479"></a-entity>
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.57 -5.001" scale="22.484 22.484 5.479"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
               
                 </a-entity> 
                 <a-entity id="ship-2" position="22.697 0 0.276">
-                  <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                  <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                  <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                  <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                   
                     </a-entity><a-entity id="ship-3" position="-22.718 0 0.276">
-                  <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                  <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                  <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                  <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                   
                     </a-entity>
                     </a-entity><a-entity id="wall-2" position="0 22.71 0">
              <a-entity id="ship">
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
               
                 </a-entity><a-entity id="ship-4" position="-45.53 0 0">
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.57 -6.102" scale="22.484 22.484 7.063"></a-entity>
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.57 -6.102" scale="22.484 22.484 7.063"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
               
                 </a-entity><a-entity id="ship-5" position="45.338 0 0">
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.57 -4.03" scale="22.484 22.484 5.15"></a-entity>
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.57 -4.03" scale="22.484 22.484 5.15"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
               
                 </a-entity> 
                 <a-entity id="ship-2" position="22.697 0 0.276">
-                  <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                  <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                  <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                  <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                   
                     </a-entity><a-entity id="ship-3" position="-22.718 0 0.276">
-                  <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                  <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                  <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                  <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                   
                     </a-entity>
                     </a-entity><a-entity id="wall-3" position="0 -17.548 -17.025" rotation="43.88856710702106 0 0">
              <a-entity id="ship">
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
               
                 </a-entity><a-entity id="ship-4" position="-45.53 0 0">
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="-0.096 11.759 -5.913" scale="22.484 22.484 7.739"></a-entity>
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="-0.096 11.759 -5.913" scale="22.484 22.484 7.739"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
               
                 </a-entity><a-entity id="ship-5" position="45.338 0 0">
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="-0.005 11.349 -4.894" scale="22.484 22.484 5.321"></a-entity>
-              <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="-0.005 11.349 -4.894" scale="22.484 22.484 5.321"></a-entity>
+              <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
               
                 </a-entity> 
                 <a-entity id="ship-2" position="22.697 0 0.276">
-                  <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                  <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                  <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                  <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                   
                     </a-entity><a-entity id="ship-3" position="-22.718 0 0.276">
-                  <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                  <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                  <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                  <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                   
                     </a-entity>
                     </a-entity>
@@ -157,12 +162,12 @@
                            </a-entity>
                        <a-entity id="wall">
                      <a-entity id="ship">
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                       
                         </a-entity><a-entity id="ship-4" position="-45.53 0 0">
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.569 -6.525" scale="22.484 22.484 8.209"></a-entity>
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.569 -6.525" scale="22.484 22.484 8.209"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                       
                         </a-entity><a-entity id="ship-5" position="45.338 0 0">
                       <a-entity geometry="" material="src:hull2.png" position="0 11.57 -5.001" scale="22.484 22.484 5.479"></a-entity>
@@ -170,58 +175,58 @@
                       
                         </a-entity> 
                         <a-entity id="ship-2" position="22.697 0 0.276">
-                          <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                          <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                          <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                          <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                           
                             </a-entity><a-entity id="ship-3" position="-22.718 0 0.276">
-                          <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                          <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                          <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                          <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                           
                             </a-entity>
                             </a-entity><a-entity id="wall-2" position="0 22.71 0">
                      <a-entity id="ship">
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                       
                         </a-entity><a-entity id="ship-4" position="-45.53 0 0">
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.57 -6.102" scale="22.484 22.484 7.063"></a-entity>
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.57 -6.102" scale="22.484 22.484 7.063"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                       
                         </a-entity><a-entity id="ship-5" position="45.338 0 0">
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.57 -4.03" scale="22.484 22.484 5.15"></a-entity>
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.57 -4.03" scale="22.484 22.484 5.15"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                       
                         </a-entity> 
                         <a-entity id="ship-2" position="22.697 0 0.276">
-                          <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                          <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                          <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                          <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                           
                             </a-entity><a-entity id="ship-3" position="-22.718 0 0.276">
-                          <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                          <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                          <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                          <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                           
                             </a-entity>
                             </a-entity><a-entity id="wall-3" position="0 -17.548 -17.025" rotation="43.88856710702106 0 0">
                      <a-entity id="ship">
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                       
                         </a-entity><a-entity id="ship-4" position="-45.53 0 0">
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="-0.096 11.759 -5.913" scale="22.484 22.484 7.739"></a-entity>
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="-0.096 11.759 -5.913" scale="22.484 22.484 7.739"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                       
                         </a-entity><a-entity id="ship-5" position="45.338 0 0">
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="-0.005 11.349 -4.894" scale="22.484 22.484 5.321"></a-entity>
-                      <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="-0.005 11.349 -4.894" scale="22.484 22.484 5.321"></a-entity>
+                      <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                       
                         </a-entity> 
                         <a-entity id="ship-2" position="22.697 0 0.276">
-                          <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                          <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                          <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                          <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                           
                             </a-entity><a-entity id="ship-3" position="-22.718 0 0.276">
-                          <a-entity n-mesh-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
-                          <a-entity n-mesh-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
+                          <a-entity n-box-collider="type: environment" geometry="" material="src:hull2.png" position="0 11.568 -13.652" scale="22.484 22.484 22.484"></a-entity>
+                          <a-entity n-box-collider="type: environment" geometry="" material="src:small_hull1.jpg" position="0 11.568 -1.284" scale="2.808 2.808 2.808"></a-entity>
                           
                             </a-entity>
                             </a-entity>
