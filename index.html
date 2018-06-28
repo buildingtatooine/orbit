@@ -19,15 +19,21 @@
     </a-assets>
     <!--
 
-  
+  <a-entity n-gltf="url:destroyer.glb" position="331.92 4 -1338.99" rotation="0 -90.012 0" scale="3506.103 3506.103 3506.103">
+    <a-animation attribute="position" to="331.92 4 1731.011" dur="200000"></a-animation>
+</a-entity>
  
  <a-gltf-model src="destroyer.glb" position="331.92 4 -1338.99" rotation="0 -90.012 0" scale="3506.103 3506.103 3506.103" gltf-model="destroyer.glb">
     <a-animation attribute="position" to="331.92 4 1731.011" dur="200000"></a-animation>
 </a-gltf-model>
 -->
-<a-entity n-gltf="url:destroyer.glb" position="331.92 4 -1338.99" rotation="0 -90.012 0" scale="3506.103 3506.103 3506.103">
-    <a-animation attribute="position" to="331.92 4 1731.011" dur="200000"></a-animation>
-</a-entity>
+<a-gltf-model src="destroyer.glb" position="331.92 4 -1338.99" rotation="0 -90.012 0" scale="3506.103 3506.103 3506.103" gltf-model="destroyer.glb">
+        <a-animation attribute="position" to="331.92 4 1731.011" dur="200000"></a-animation>
+        <a-animation attribute="rotation" to="0 -180 0" delay="200000" dur="200000"></a-animation>
+        <a-animation attribute="position" from="331.92 4 1731.011" to="-1905.170 4 1975.462" dur="200000" delay="400000"></a-animation>
+        <a-animation attribute="position" from="-1905.170 4 1975.462" to="-8736.767 4 1975.462" dur="1000" delay="600000"></a-animation>
+    </a-gltf-model>
+
 <a-entity id="catwalk" position="0 30.164 0">
         <a-entity obj-model="mtl:catwalk.mtl;obj:catwalk.obj" position="-45.505 19.346 50.562" rotation="-77.97955591730503 179.8514518915654 0.17188733853924698" scale="114.339 114.339 114.339"></a-entity>
         <a-entity obj-model="mtl:catwalk.mtl;obj:catwalk.obj" position="45.153 19.346 50.562" rotation="-77.97955591730503 179.8514518915654 0.17188733853924698" scale="114.339 114.339 114.339"></a-entity>
